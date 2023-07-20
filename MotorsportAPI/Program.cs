@@ -5,8 +5,6 @@ namespace MotorsportAPI
 {
     public class Program
     {
-        private IConfigurationRoot _configuration;
-
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
