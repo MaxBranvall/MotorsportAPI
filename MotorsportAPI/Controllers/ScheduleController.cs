@@ -29,5 +29,12 @@ namespace MotorsportAPI.Controllers
             var schedule = await _scheduleService.GetSchedule(Series.F1);
             return schedule;
         }
+
+        [HttpGet("indy")]
+        public async Task<IEnumerable<RaceEvent>> GetIndySchedule()
+        {
+            var schedule = await _scheduleService.GetSchedule(Series.INDYCAR);
+            return schedule;
+        }
     }
 }
